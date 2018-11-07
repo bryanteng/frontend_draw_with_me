@@ -75,7 +75,7 @@ enterBtn.addEventListener('click', () => {
     userWebSocket.onopen = e => {
 
         const subscribeUser = {
-            "command": "subscribe", "identifier": "{\"channel\":\"UsersChannel\"}" 
+            "command": "subscribe", "identifier": "{\"channel\":\"UsersChannel\"}"
         }
         userWebSocket.send(JSON.stringify(subscribeUser))
     }
@@ -96,7 +96,7 @@ enterBtn.addEventListener('click', () => {
         circleWebSocket.send(JSON.stringify(msg))
     }
 
-    tool.maxDistance = 1
+    tool.maxDistance = 5
 
     tool.onMouseDrag = function (event) {
         let circle = new Path.Circle({
@@ -221,11 +221,10 @@ function liveCircleSocket(circleWebSocket) {
 function liveUserSocket(userWebSocket) {
     userWebSocket.onmessage = e => {
 
-        let result 
+        let result
 
     }
 }
 function setCurrentUser() {
 
 }
-
