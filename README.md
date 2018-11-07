@@ -1,6 +1,7 @@
 # Draw with Me
 
 *Draw with Me*, a collaborative drawing application with a shared canvas and a chat room.
+![example pic](./app_demo.png)
 
 ## Application Features
 - User can draw on a shared canvas with another user.
